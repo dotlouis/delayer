@@ -1,0 +1,33 @@
+{
+    "name": "delayer",
+    "homepage": "https://github.com/dot-louis/delayer",
+    "authors": [
+        "dot-louis"
+    ],
+    "description": "Angular service to prevent the user from spamming UI elements (toggles, buttons, searchbars, refreshes)",
+    "main": "delayer.service.js",
+    "moduleType": [],
+    "keywords": [
+        "angular",
+        "refresh",
+        "toggle",
+        "delay",
+        "timeout",
+        "repeat",
+        "switch",
+        "button",
+        "interval",
+        "spam"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "1.4.3"
+    }
+}
