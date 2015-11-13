@@ -1,4 +1,4 @@
-angular.module('delayer')
+angular.module('delayer',[])
 .factory('delayer',[
   '$timeout',
   '$q',
@@ -61,9 +61,12 @@ angular.module('delayer')
     else{
       // if there is a timeout function running, we don't do anything
       if(!(this.timeout && this.timeout.$$state.status === 0)){
+        this.hits = 0;
         this.result.resolve(this.fns[this.current](params));
         this.timeout = $timeout(this.delay);
       }
+      else
+        this.hits++;
     }
 
     return this.result.promise;
